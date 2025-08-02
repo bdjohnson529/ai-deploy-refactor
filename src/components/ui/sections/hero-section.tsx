@@ -1,6 +1,9 @@
 import { Button } from "@/components/ui/interactive/button"
 import ChatBot from "@/components/ui/interactive/chatbot"
 import cubeIcon from "@/assets/cube-icon.png"
+import aurora from "@/assets/aurora.png"
+import background from "@/assets/background-5.jpeg"
+import background4 from "@/assets/background-4.png"
 import { useState } from "react"
 
 const HeroSection = () => {
@@ -22,40 +25,45 @@ const HeroSection = () => {
     }, 1000)
   }
   return (
-    <section className="min-h-screen bg-gradient-hero flex items-center justify-center pt-20">
-      <div className="container mx-auto px-6">
-        <div className="grid lg:grid-cols-2 gap-8 items-start">
-          <div className="space-y-8">
-            <h1 className="text-6xl lg:text-8xl font-bold leading-tight">
-              AI, <span className="text-primary">Deployed.</span>
+    <section 
+      className="min-h-screen text-white flex items-center justify-center pt-20 bg-black relative"
+    >
+      <div className="container mx-auto px-6 max-w-7xl">
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="space-y-12 text-center lg:text-left">
+            <h1 className="text-7xl lg:text-8xl font-light leading-none tracking-tight whitespace-nowrap">
+              AI, <span className="text-blue-400">Deployed.</span>
             </h1>
             
-            <div className="space-y-2 text-lg lg:text-xl text-muted-foreground max-w-2xl">
-              <p>We are your expert partner at deploying Enterprise AI</p>
-              <p>use cases <span className="text-primary font-semibold">into production </span>with <span className="text-primary font-semibold">measurable results.</span></p>
+            <div className="space-y-2 text-xl lg:text-2xl text-gray-300 max-w-2xl font-light leading-relaxed mx-auto lg:mx-0">
+              <p>We are your expert partner for deploying Enterprise AI</p>
+              <p><span className="text-blue-400 font-normal">into production</span> with <span className="text-blue-400 font-normal">measurable results.</span></p>
             </div>
 
             {/* Email Signup Form */}
-            <div className="max-w-md">
+            <div className="max-w-md pt-4 mx-auto lg:mx-0">
+              <div className="text-gray-300 text-lg font-medium mb-4">
+                Get a free consultation
+              </div>
               {submitted ? (
-                <div className="text-primary font-medium">
+                <div className="text-white font-medium text-lg">
                   ✓ Thanks! We'll be in touch soon.
                 </div>
               ) : (
-                <form onSubmit={handleEmailSubmit} className="flex gap-2">
+                <form onSubmit={handleEmailSubmit} className="flex gap-3">
                   <input
                     type="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder="Enter your email"
-                    className="flex-1 px-4 py-2 rounded-lg border border-gray-300 bg-white text-gray-900 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary relative z-10"
+                    className="flex-1 px-4 py-3 rounded-lg border border-gray-600 bg-gray-900 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-white/20 focus:border-white/30 relative z-10"
                     required
                     autoComplete="email"
                   />
                   <Button 
                     type="submit" 
                     disabled={isSubmitting}
-                    className="bg-primary hover:bg-primary/90 relative z-10"
+                    className="bg-white text-black hover:bg-gray-200 px-6 py-3 font-medium relative z-10 h-auto"
                   >
                     {isSubmitting ? "..." : "Submit"}
                   </Button>
@@ -63,20 +71,36 @@ const HeroSection = () => {
               )}
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="bg-gradient-primary hover:shadow-primary">
-                Start Your Project
-              </Button>
-              <Button variant="outline" size="lg">
-                View Case Studies
-              </Button>
-            </div>
-
           </div>
           
-          <div className="flex justify-center lg:justify-end mr-[10vw]">
-            <ChatBot />
+          <div className="hidden lg:flex justify-center lg:justify-end">
+            <div className="w-[500px] h-[500px] bg-gray-900 rounded-lg flex items-center justify-center overflow-hidden">
+              <img src={background4} alt="Background" className="w-full h-full object-cover" />
+            </div>
           </div>
+        </div>
+        
+        {/* Learn More Link */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+          <button
+            onClick={() => {
+              const nextSection = document.querySelector('#next-section')
+              if (nextSection) {
+                nextSection.scrollIntoView({ behavior: 'smooth' })
+              }
+            }}
+            className="flex flex-col items-center text-white hover:text-blue-400 transition-colors duration-300 group"
+          >
+            <span className="text-sm font-light mb-2">Learn more</span>
+            <svg 
+              className="w-6 h-6 animate-bounce group-hover:text-blue-400" 
+              fill="none" 
+              stroke="currentColor" 
+              viewBox="0 0 24 24"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+            </svg>
+          </button>
         </div>
         
       </div>

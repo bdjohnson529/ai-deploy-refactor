@@ -2,7 +2,7 @@ import { Card } from "@/components/ui/layout/card"
 
 const DeploymentGap = () => {
   return (
-    <section className="py-20 bg-surface">
+    <section className="py-20 bg-surface" id="next-section">
       <div className="container mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
