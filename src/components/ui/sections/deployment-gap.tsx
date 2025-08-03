@@ -9,10 +9,11 @@ const DeploymentGap = () => {
               <p>75% of AI deployments never make it to production. Most projects fail because they aren't integrated with business systems and processes.</p>
             </div>
 
-            <div className="space-y-2 text-lg text-white w-full max-w-3xl mx-auto text-left">
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+            <div className="text-lg text-white w-full max-w-3xl mx-auto text-left space-y-4">
+              <p>Agentic AI systems are designed around data systems and operational processes. For an Agent to be successful, it needs access to the correct data, and it needs to have the proper level of governance within your existing operational process. <span className="text-blue-400 font-bold font-italic">How you deploy</span> AI is equally important, if not more important, than which AI technology you use.</p>
+              <p>Data and operations are what makes your business unique. Successful AI deployments <span className="text-blue-400 font-bold">require customization</span> past simply purchasing an off-the-shelf technology. They require an investment in data architecture, business process mapping, and use case scoping.</p>
+              <p><span className="text-blue-400 font-bold">We are your partner</span> in implementing AI and Agentic systems in your business. We work closely with your team from initial ideation to project delivery. Our approach starts with use case ideation and quantifying business impact, before progressing to proof-of-concept and ultimately production deployment.</p>
             </div>
-
             
           </div>
           
