@@ -27,6 +27,7 @@ const HeroSection = () => {
   return (
     <section 
       className="min-h-screen text-white flex items-center justify-center pt-20 bg-black relative"
+      id="hero"
     >
       <div className="container mx-auto px-6 max-w-7xl">
         <div className="grid lg:grid-cols-2 gap-16 items-center">

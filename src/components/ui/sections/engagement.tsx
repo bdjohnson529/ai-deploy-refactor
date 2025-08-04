@@ -24,7 +24,7 @@ const Engagement = () => {
   ]
 
   return (
-    <section className="py-20 bg-background" id="engagement-section">
+    <section className="py-20 bg-background" id="engagement">
       <div className="container mx-auto px-6 max-w-7xl">
         <div className="space-y-12">            
           <div className="space-y-6 text-center w-full">

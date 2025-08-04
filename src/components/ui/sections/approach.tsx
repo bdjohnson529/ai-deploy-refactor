@@ -2,7 +2,7 @@ import { Card } from "@/components/ui/layout/card"
 
 const Approach = () => {
   return (
-    <section className="pt-8 pb-20 bg-background" id="next-section">
+    <section className="pt-8 pb-20 bg-background" id="approach">
       <div className="container mx-auto px-6 max-w-7xl">
         <div className="space-y-12">            
           <div className="text-center">

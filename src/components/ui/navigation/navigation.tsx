@@ -11,12 +11,12 @@ const Navigation = () => {
           </a>
           
           <div className="hidden md:flex items-center space-x-8 ml-16">
-            <a href="#next-section" className="text-foreground hover:text-primary transition-colors">Services</a>
-            <a href="#offerings-section" className="text-foreground hover:text-primary transition-colors">Case Studies</a>
-            <a href="#engagement-section" className="text-foreground hover:text-primary transition-colors">About</a>
+            <a href="#approach" className="text-foreground hover:text-primary transition-colors">Services</a>
+            <a href="#offerings" className="text-foreground hover:text-primary transition-colors">Case Studies</a>
+            <a href="#engagement" className="text-foreground hover:text-primary transition-colors">About</a>
           </div>
           
-          <a href="#engagement-section" className="hidden md:block ml-auto">
+          <a href="#engagement" className="hidden md:block ml-auto">
             <Button variant="outline">
               Get Started
             </Button>

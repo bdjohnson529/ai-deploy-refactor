@@ -2,7 +2,7 @@ import { Card } from "@/components/ui/layout/card"
 
 const Services = () => {
   return (
-    <section className="py-20 pb-20 bg-background">
+    <section className="py-20 pb-20 bg-background" id="services">
       <div className="container mx-auto px-6 max-w-7xl">
         <div className="space-y-12">            
           <div className="space-y-6 text-center w-full">
