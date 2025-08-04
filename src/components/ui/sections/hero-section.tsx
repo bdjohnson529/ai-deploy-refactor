@@ -85,9 +85,11 @@ const HeroSection = () => {
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
           <button
             onClick={() => {
-              const nextSection = document.querySelector('#next-section')
+              const nextSection = document.querySelector('#problem') as HTMLElement
               if (nextSection) {
-                nextSection.scrollIntoView({ behavior: 'smooth' })
+                const offset = 80
+                const elementPosition = nextSection.offsetTop - offset
+                window.scrollTo({ top: elementPosition, behavior: 'smooth' })
               }
             }}
             className="flex flex-col items-center text-white hover:text-blue-400 transition-colors duration-300 group"

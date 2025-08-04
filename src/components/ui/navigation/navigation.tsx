@@ -5,22 +5,78 @@ const Navigation = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-start">
-          <a href="#top" className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
+          <button 
+            onClick={() => {
+              const section = document.querySelector('#top') as HTMLElement
+              if (section) {
+                const offset = 80
+                const elementPosition = section.offsetTop - offset
+                window.scrollTo({ top: elementPosition, behavior: 'smooth' })
+              }
+            }}
+            className="flex items-center space-x-2 hover:opacity-80 transition-opacity"
+          >
             <div className="w-8 h-8 bg-gradient-primary rounded-md"></div>
             <span className="text-xl font-bold">DeployAI</span>
-          </a>
+          </button>
           
           <div className="hidden md:flex items-center space-x-8 ml-16">
-            <a href="#approach" className="text-foreground hover:text-primary transition-colors">Services</a>
-            <a href="#offerings" className="text-foreground hover:text-primary transition-colors">Case Studies</a>
-            <a href="#engagement" className="text-foreground hover:text-primary transition-colors">About</a>
+            <button 
+              onClick={() => {
+                const section = document.querySelector('#approach') as HTMLElement
+                if (section) {
+                  const offset = 80
+                  const elementPosition = section.offsetTop - offset
+                  window.scrollTo({ top: elementPosition, behavior: 'smooth' })
+                }
+              }}
+              className="text-foreground hover:text-primary transition-colors"
+            >
+              Services
+            </button>
+            <button 
+              onClick={() => {
+                const section = document.querySelector('#offerings') as HTMLElement
+                if (section) {
+                  const offset = 80
+                  const elementPosition = section.offsetTop - offset
+                  window.scrollTo({ top: elementPosition, behavior: 'smooth' })
+                }
+              }}
+              className="text-foreground hover:text-primary transition-colors"
+            >
+              Case Studies
+            </button>
+            <button 
+              onClick={() => {
+                const section = document.querySelector('#engagement') as HTMLElement
+                if (section) {
+                  const offset = 80
+                  const elementPosition = section.offsetTop - offset
+                  window.scrollTo({ top: elementPosition, behavior: 'smooth' })
+                }
+              }}
+              className="text-foreground hover:text-primary transition-colors"
+            >
+              About
+            </button>
           </div>
           
-          <a href="#engagement" className="hidden md:block ml-auto">
+          <button 
+            onClick={() => {
+              const section = document.querySelector('#engagement') as HTMLElement
+              if (section) {
+                const offset = 80
+                const elementPosition = section.offsetTop - offset
+                window.scrollTo({ top: elementPosition, behavior: 'smooth' })
+              }
+            }}
+            className="hidden md:block ml-auto"
+          >
             <Button variant="outline">
               Get Started
             </Button>
-          </a>
+          </button>
         </div>
       </div>
     </nav>
