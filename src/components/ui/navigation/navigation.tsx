@@ -16,9 +16,11 @@ const Navigation = () => {
             <a href="#engagement-section" className="text-foreground hover:text-primary transition-colors">About</a>
           </div>
           
-          <Button variant="outline" className="hidden md:block ml-auto">
-            Get Started
-          </Button>
+          <a href="#engagement-section" className="hidden md:block ml-auto">
+            <Button variant="outline">
+              Get Started
+            </Button>
+          </a>
         </div>
       </div>
     </nav>
