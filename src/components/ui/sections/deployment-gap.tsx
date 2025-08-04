@@ -2,7 +2,7 @@ import { Card } from "@/components/ui/layout/card"
 
 const DeploymentGap = () => {
   return (
-    <section className="py-20 bg-surface" id="next-section">
+    <section className="py-20 bg-background" id="next-section">
       <div className="container mx-auto px-6 max-w-7xl">
           <div className="space-y-12 text-center w-full">            
             <div className="space-y-2 text-4xl text-white w-full max-w-4xl mx-auto">

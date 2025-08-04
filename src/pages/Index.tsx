@@ -1,7 +1,7 @@
 import Navigation from "@/components/ui/navigation/navigation"
 import HeroSection from "@/components/ui/sections/hero-section"
 import DeploymentGap from "@/components/ui/sections/deployment-gap"
-import ProductionUseCases from "@/components/ui/sections/production-use-cases"
+import Approach from "@/components/ui/sections/approach"
 import ServicesSection from "@/components/ui/sections/services-section"
 import EngagementSection from "@/components/ui/sections/engagement-section"
 
@@ -11,7 +11,7 @@ const Index = () => {
       <Navigation />
       <HeroSection />
       <DeploymentGap />
-      <ProductionUseCases />
+      <Approach />
       <ServicesSection />
       <EngagementSection />
     </div>
