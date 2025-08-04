@@ -3,7 +3,7 @@ import { Input } from "@/components/ui/forms/input"
 import { Card } from "@/components/ui/layout/card"
 import { useState } from "react"
 
-const EngagementSection = () => {
+const Engagement = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -48,7 +48,7 @@ const EngagementSection = () => {
                 ))}
               </div>
             </div>
-
+            
             <Card className="bg-surface border-border p-8">
               <h3 className="text-2xl font-semibold mb-6">Fill in this form to book a free consultation.</h3>
               
@@ -115,4 +115,4 @@ const EngagementSection = () => {
   )
 }
 
-export default EngagementSection
+export default Engagement

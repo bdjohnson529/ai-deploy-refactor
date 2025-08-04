@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/layout/card"
 
-const DeploymentGap = () => {
+const Problem = () => {
   return (
     <section className="pt-20 pb-8 bg-background" id="next-section">
       <div className="container mx-auto px-6 max-w-7xl">
@@ -22,4 +22,4 @@ const DeploymentGap = () => {
   )
 }
 
-export default DeploymentGap
+export default Problem
