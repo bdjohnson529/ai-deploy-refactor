@@ -5,6 +5,7 @@ import ProductionUseCases from "@/components/ui/sections/production-use-cases"
 import ServicesSection from "@/components/ui/sections/services-section"
 import EngagementSection from "@/components/ui/sections/engagement-section"
 import Approach from "@/components/ui/sections/approach"
+import Offerings from "@/components/ui/sections/offerings"
 
 
 const Index = () => {
@@ -14,7 +15,7 @@ const Index = () => {
       <HeroSection />
       <DeploymentGap />
       <Approach />
-      <ProductionUseCases />
+      <Offerings />
       <ServicesSection />
       <EngagementSection />
     </div>
