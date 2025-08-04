@@ -11,9 +11,9 @@ const Navigation = () => {
           </div>
           
           <div className="hidden md:flex items-center space-x-8 ml-16">
-            <a href="#services" className="text-foreground hover:text-primary transition-colors">Services</a>
-            <a href="#case-studies" className="text-foreground hover:text-primary transition-colors">Case Studies</a>
-            <a href="#about" className="text-foreground hover:text-primary transition-colors">About</a>
+            <a href="#next-section" className="text-foreground hover:text-primary transition-colors">Services</a>
+            <a href="#offerings-section" className="text-foreground hover:text-primary transition-colors">Case Studies</a>
+            <a href="#engagement-section" className="text-foreground hover:text-primary transition-colors">About</a>
           </div>
           
           <Button variant="outline" className="hidden md:block ml-auto">

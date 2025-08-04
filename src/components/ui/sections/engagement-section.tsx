@@ -24,7 +24,7 @@ const EngagementSection = () => {
   ]
 
   return (
-    <section className="py-20 bg-background">
+    <section className="py-20 bg-background" id="engagement-section">
       <div className="container mx-auto px-6 max-w-7xl">
         <div className="space-y-12">            
           <div className="space-y-6 text-center w-full">
@@ -48,7 +48,7 @@ const EngagementSection = () => {
                 ))}
               </div>
             </div>
-            
+
             <Card className="bg-surface border-border p-8">
               <h3 className="text-2xl font-semibold mb-6">Fill in this form to book a free consultation.</h3>
               
