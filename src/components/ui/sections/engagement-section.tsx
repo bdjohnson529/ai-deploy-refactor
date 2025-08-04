@@ -6,7 +6,8 @@ import { useState } from "react"
 const EngagementSection = () => {
   const [formData, setFormData] = useState({
     name: '',
-    email: ''
+    email: '',
+    company: ''
   })
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -24,11 +25,16 @@ const EngagementSection = () => {
 
   return (
     <section className="py-20 bg-background">
-      <div className="container mx-auto px-6">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-5xl font-bold mb-12">Where do we start?</h2>
+      <div className="container mx-auto px-6 max-w-7xl">
+        <div className="space-y-12">            
+          <div className="space-y-6 text-center w-full">
+            <div className="space-y-2 text-4xl text-white w-full max-w-4xl mx-auto">
+              <h2 className="mb-4">Where do we start?</h2>
+            </div>
+          </div>
           
-          <div className="grid lg:grid-cols-2 gap-12 items-start">
+          <div className="max-w-4xl mx-auto">
+            <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div>
               <p className="text-xl text-muted-foreground mb-8">Our typical engagement model is</p>
               
@@ -63,6 +69,21 @@ const EngagementSection = () => {
                 </div>
                 
                 <div>
+                  <label htmlFor="company" className="block text-sm font-medium text-muted-foreground mb-2">
+                    Company
+                  </label>
+                  <Input
+                    id="company"
+                    type="text"
+                    placeholder="Acme Corp"
+                    value={formData.company}
+                    onChange={(e) => setFormData({...formData, company: e.target.value})}
+                    className="bg-background border-border"
+                    required
+                  />
+                </div>
+                
+                <div>
                   <label htmlFor="email" className="block text-sm font-medium text-muted-foreground mb-2">
                     Email
                   </label>
@@ -89,6 +110,7 @@ const EngagementSection = () => {
           </div>
         </div>
       </div>
+    </div>
     </section>
   )
 }
