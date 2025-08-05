@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/interactive/button"
+import favicon from "@/assets/favicon.png"
 
 const Navigation = () => {
   return (
@@ -16,8 +17,8 @@ const Navigation = () => {
             }}
             className="flex items-center space-x-2 hover:opacity-80 transition-opacity"
           >
-            <div className="w-8 h-8 bg-gradient-primary rounded-md"></div>
-            <span className="text-xl font-bold">DeployAI</span>
+            <img src={favicon} alt="Ion Partners Logo" className="w-8 h-8 rounded-md" />
+            <span className="text-xl font-bold">Ion Partners</span>
           </button>
           
           <div className="hidden md:flex items-center space-x-8 ml-16">
