@@ -14,7 +14,7 @@ const Approach = () => {
             {/* Left column - Image */}
             <div className="order-2 md:order-1">
               <img 
-                src="/src/assets/background-2.png" 
+                src="/src/assets/process-mapping.png" 
                 alt="Our approach illustration" 
                 className="w-full h-auto rounded-lg shadow-lg"
               />
