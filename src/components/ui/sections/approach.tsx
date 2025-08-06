@@ -24,7 +24,7 @@ const Approach = () => {
             <div className="order-1 md:order-2 space-y-6">
               <div className="text-lg text-white leading-relaxed space-y-4">
                 <h3 className="text-3xl text-bold text-white mb-4">Business Process Mapping</h3>
-                <p>Every successful implementation starts by understanding an existing operational process. The first step in our engagement is to map and prioritize use cases, while paying close attention to success criteria and metrics that will indicate ROI.</p>
+                <p>Successful deployments start with a detailed understanding of your current operational processes. The first step in our engagement is to map and prioritize use cases, while paying close attention to success criteria and metrics that will indicate ROI.</p>
               </div>
             </div>
           </div>
@@ -34,7 +34,7 @@ const Approach = () => {
             {/* Left column - Text */}
             <div className="order-1 md:order-1 space-y-6">
               <div className="text-lg text-white leading-relaxed space-y-4">
-                <h3 className="text-3xl text-bold text-white mb-4">Solution Delivery</h3>
+                <h3 className="text-3xl text-bold text-white mb-4">Proof of Concept</h3>
                 <p>We are a full-stack software development agency who has experience building frontends, backend systems, and data pipelines. We start with a proof-of-concept, iterate and ultimately deliver a production-grade application for your business.</p>
               </div>
             </div>
@@ -63,7 +63,7 @@ const Approach = () => {
             {/* Right column - Text */}
             <div className="order-1 md:order-2 space-y-6">
               <div className="text-lg text-white leading-relaxed space-y-4">
-                <h3 className="text-3xl text-bold text-white mb-4">Training and Upskilling</h3>
+                <h3 className="text-3xl text-bold text-white mb-4">Production Deployment</h3>
                 <p>Adoption is hard. Implementations are only be as successful as the people who adopt them. We provide training services to help your people upgrade how they use AI.</p>
               </div>
             </div>
