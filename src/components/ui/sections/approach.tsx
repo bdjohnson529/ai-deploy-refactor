@@ -24,7 +24,7 @@ const Approach = () => {
             <div className="order-1 md:order-2 space-y-6">
               <div className="text-lg text-white leading-relaxed space-y-4">
                 <h3 className="text-3xl text-bold text-white mb-4">Business Process Mapping</h3>
-                <p>Successful deployments start with a detailed understanding of your current operational processes. The first step in our engagement is to map and prioritize use cases, while paying close attention to success criteria and metrics that will indicate ROI.</p>
+                <p>Successful deployments start with a detailed understanding of your existing operational processes. The first step in our engagement is to map and prioritize use cases, while paying close attention to success criteria and metrics that will indicate ROI.</p>
               </div>
             </div>
           </div>
@@ -35,7 +35,7 @@ const Approach = () => {
             <div className="order-1 md:order-1 space-y-6">
               <div className="text-lg text-white leading-relaxed space-y-4">
                 <h3 className="text-3xl text-bold text-white mb-4">Proof of Concept</h3>
-                <p>We are a full-stack software development agency who has experience building frontends, backend systems, and data pipelines. We start with a proof-of-concept, iterate and ultimately deliver a production-grade application for your business.</p>
+                <p>We are a full-stack software development agency with experience building frontends, backend systems, data and ML pipelines. We build a proof-of-concept so that we can test results before deploying the solution in your business.</p>
               </div>
             </div>
             
@@ -64,7 +64,7 @@ const Approach = () => {
             <div className="order-1 md:order-2 space-y-6">
               <div className="text-lg text-white leading-relaxed space-y-4">
                 <h3 className="text-3xl text-bold text-white mb-4">Production Deployment</h3>
-                <p>Adoption is hard. Implementations are only be as successful as the people who adopt them. We provide training services to help your people upgrade how they use AI.</p>
+                <p>Once we have established proper governance and guardrails, we help you deploy the solution into a production environment. This includes building evals and analytics so you can monitor and control the system in production.</p>
               </div>
             </div>
           </div>

@@ -26,10 +26,16 @@ const HeroSection = () => {
   }
   return (
     <section 
-      className="min-h-screen text-white flex items-center justify-center pt-20 bg-black relative"
+      className="min-h-screen text-white flex items-center justify-center pt-20 relative bg-cover bg-center bg-no-repeat"
       id="hero"
+      style={{
+        backgroundImage: `url(${background4})`
+      }}
     >
-      <div className="container mx-auto px-6 max-w-7xl">
+      {/* Dark overlay for better text readability */}
+      <div className="absolute inset-0 bg-black/50"></div>
+      
+      <div className="container mx-auto px-6 max-w-7xl relative z-10">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className="space-y-12 text-center lg:text-left">
             <h1 className="text-7xl lg:text-8xl font-light leading-none tracking-tight whitespace-nowrap">

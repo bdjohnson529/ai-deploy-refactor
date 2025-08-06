@@ -10,8 +10,7 @@ const Problem = () => {
             </div>
 
             <div className="text-lg text-white w-full max-w-3xl mx-auto text-left space-y-6 leading-relaxed">
-              <p>We are in a period of rapid technology development. Within the past year AI has developed the ability to solve PhD level math problems, beat the world’s best programmers, and contribute to fundamental scientific research.</p>
-              <p>Despite rapidly advancing capabilities, more than 50% of CEOs are struggling to adopt AI within their business. A small percentage of companies are successfully deploying AI, and the rest are struggling to keep pace and avoid getting left behind.</p>
+              <p>Despite rapidly advancing capabilities, the majority of CEOs are struggling to adopt AI within their business. A small percentage of companies are successfully deploying AI, and the rest are struggling to keep pace and avoid getting left behind.</p>
             </div>
 
             <div className="space-y-2 text-4xl text-white w-full max-w-4xl mx-auto">
@@ -19,19 +18,17 @@ const Problem = () => {
             </div>
 
             <div className="text-lg text-white w-full max-w-3xl mx-auto text-left space-y-6 leading-relaxed">
-              <p><span className="text-blue-400 underline">More than 50% of Fortune 500 businesses have been replaced within the last 15 years.</span> Since 2010, more than half of the Fortune 500 has been replaced by newer, faster, more agile competitors. Companies that remained have transformed the ways they use technology.</p>
-              <p>The rate of technology advancement is now 10X what it was in 2010. Governments, investment firms and companies invested $250B into AI in the 2025 fiscal year alone. That investment has paved the way for the technology to advance faster than any technology we have seen before.</p>
+              <p>More than <span className="text-blue-400 underline">50% of Fortune 500 businesses have been replaced</span> since 2010. Those companies were replaced by ones who used technology to transform how they serve their customers. The rate of technology advancement is now 10X what it was in 2010.</p>
             </div>
 
             <div className="space-y-2 text-4xl text-white w-full max-w-4xl mx-auto">
-              <p>Deployments fail because they aren't integrated with business systems, processes and people.</p>
+              <p>Deployments fail because of integration challenges.</p>
             </div>
             
 
             <div className="text-lg text-white w-full max-w-3xl mx-auto text-left space-y-6 leading-relaxed">
-              <p>AI systems are designed around data systems and operational processes. For AI use cases to be successful, they need access to the correct data, and the proper level of governance. <span className="text-blue-400 underline">How you deploy</span> AI is equally important, if not more important, than which AI technology you use.</p>
-              <p>Data and operations are what makes your business unique. Successful AI deployments <span className="text-blue-400 underline">require customization</span> past simply purchasing an off-the-shelf technology. They require an investment in data architecture, business process mapping, and use case scoping.</p>
-              <p><span className="text-blue-400 underline">We are your partner</span> in implementing AI and Agentic systems in your business. We work closely with your team from initial ideation to project delivery. Our approach starts with use case ideation and quantifying business impact, before progressing to proof-of-concept and ultimately production deployment.</p>
+              <p>AI systems are designed around data systems and operational processes. Data and operations are what makes your business unique. Successful AI deployments <span className="text-blue-400 underline">require customization</span> past simply purchasing an off-the-shelf technology. They require an investment in data architecture, business process mapping, and implementation.</p>
+              <p><span className="text-blue-400 underline">We are your partner</span> in integrating AI into your business. We work closely with your team from initial ideation to project delivery. Our approach focuses on mapping use cases and success criteria before progressing to proof-of-concept and ultimately production deployment.</p>
             </div>
 
           </div>

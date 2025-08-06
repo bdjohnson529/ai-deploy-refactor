@@ -19,8 +19,8 @@ const Engagement = () => {
   const engagementModel = [
     { step: "1.", title: "Scoping session", duration: "(free)" },
     { step: "2.", title: "Process mapping", duration: "(2-4 weeks)" },
-    { step: "3.", title: "Solution build", duration: "(1-2 months)" },
-    { step: "4.", title: "Solution maintenance", duration: "(ongoing)" }
+    { step: "3.", title: "Proof of concept", duration: "(1-2 months)" },
+    { step: "4.", title: "Production deployment", duration: "(1-2 months)" }
   ]
 
   return (
