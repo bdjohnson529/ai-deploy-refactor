@@ -4,7 +4,7 @@ import "@/index.css";
 import { Providers } from "./providers";
 
 export const metadata: Metadata = {
-  title: "Calica AI",
+  title: "Kalika AI",
   description: "AI deployment and consulting services",
   icons: {
     icon: '/square-light.ico',

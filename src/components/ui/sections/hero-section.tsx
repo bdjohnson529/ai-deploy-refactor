@@ -1,7 +1,6 @@
 "use client";
 
 import { Button } from "@/components/ui/interactive/button"
-import ChatBot from "@/components/ui/interactive/chatbot"
 import Image from "next/image"
 import cubeIcon from "@/assets/cube-icon.png"
 import aurora from "@/assets/aurora.png"
