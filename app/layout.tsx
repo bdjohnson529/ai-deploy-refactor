@@ -4,8 +4,11 @@ import "@/index.css";
 import { Providers } from "./providers";
 
 export const metadata: Metadata = {
-  title: "AI Deploy Impact",
+  title: "Calica AI",
   description: "AI deployment and consulting services",
+  icons: {
+    icon: '/square-light.ico',
+  },
 };
 
 export default function RootLayout({
