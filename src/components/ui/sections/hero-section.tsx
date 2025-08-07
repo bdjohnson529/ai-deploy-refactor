@@ -80,11 +80,7 @@ const HeroSection = () => {
 
           </div>
           
-          <div className="hidden lg:flex justify-center lg:justify-end">
-            <div className="w-[500px] h-[500px] bg-gray-900 rounded-lg flex items-center justify-center overflow-hidden">
-              <img src={background4} alt="Background" className="w-full h-full object-cover" />
-            </div>
-          </div>
+
         </div>
         
         {/* Learn More Link */}
