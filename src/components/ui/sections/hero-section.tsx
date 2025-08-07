@@ -3,7 +3,7 @@ import ChatBot from "@/components/ui/interactive/chatbot"
 import cubeIcon from "@/assets/cube-icon.png"
 import aurora from "@/assets/aurora.png"
 import background from "@/assets/background-5.jpeg"
-import background4 from "@/assets/background-4.png"
+import background4 from "@/assets/background-6.png"
 import { useState } from "react"
 
 const HeroSection = () => {

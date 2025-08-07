@@ -3,8 +3,8 @@ import { Card } from "@/components/ui/layout/card"
 const Approach = () => {
   return (
     <section className="pt-8 pb-20 bg-background" id="approach">
-      <div className="container mx-auto px-6 max-w-7xl">
-        <div className="space-y-12">            
+      <div className="container mx-auto px-6 max-w-[1000px]">
+        <div className="space-y-4">            
           <div className="text-center">
             <h2 className="text-3xl text-white mb-12">Our Approach</h2>
           </div>
@@ -12,11 +12,11 @@ const Approach = () => {
           {/* First Row - Image Left, Text Right */}
           <div className="grid md:grid-cols-2 gap-12 items-center">
             {/* Left column - Image */}
-            <div className="order-2 md:order-1">
+            <div className="order-2 md:order-1 max-h-[300px] h-[300px] overflow-hidden flex items-center justify-center">
               <img 
-                src="/src/assets/process-mapping.png" 
+                src="/src/assets/business-process-mapping-2.png" 
                 alt="Our approach illustration" 
-                className="w-full h-auto rounded-lg shadow-lg"
+                className="max-w-full max-h-full rounded-lg shadow-lg object-contain"
               />
             </div>
             
@@ -30,7 +30,7 @@ const Approach = () => {
           </div>
 
           {/* Second Row - Text Left, Image Right */}
-          <div className="grid md:grid-cols-2 gap-12 items-center mt-20">
+          <div className="grid md:grid-cols-2 gap-12 items-center mt-12">
             {/* Left column - Text */}
             <div className="order-1 md:order-1 space-y-6">
               <div className="text-lg text-white leading-relaxed space-y-4">
@@ -40,23 +40,23 @@ const Approach = () => {
             </div>
             
             {/* Right column - Image */}
-            <div className="order-2 md:order-2">
+            <div className="order-2 md:order-2 max-h-[400px] h-[400px] overflow-hidden flex items-center justify-center">
               <img 
-                src="/src/assets/background-3.png" 
+                src="/src/assets/proof-of-concept-2.png" 
                 alt="Our methodology" 
-                className="w-full h-auto rounded-lg shadow-lg"
+                className="max-w-full max-h-full rounded-lg shadow-lg object-contain"
               />
             </div>
           </div>
 
           {/* Third Row - Image Left, Text Right */}
-          <div className="grid md:grid-cols-2 gap-12 items-center mt-20">
+          <div className="grid md:grid-cols-2 gap-12 items-center mt-12">
             {/* Left column - Image */}
-            <div className="order-2 md:order-1">
+            <div className="order-2 md:order-1 max-h-[400px] h-[400px] overflow-hidden flex items-center justify-center">
               <img 
-                src="/src/assets/background-4.png" 
+                src="/src/assets/production-2.png" 
                 alt="Implementation strategy" 
-                className="w-full h-auto rounded-lg shadow-lg"
+                className="max-w-full max-h-full rounded-lg shadow-lg object-contain"
               />
             </div>
             

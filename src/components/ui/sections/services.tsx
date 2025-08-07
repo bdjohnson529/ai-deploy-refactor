@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/layout/card"
 const Services = () => {
   return (
     <section className="py-20 pb-20 bg-background" id="services">
-      <div className="container mx-auto px-6 max-w-7xl">
+      <div className="container mx-auto px-6 max-w-5xl">
         <div className="space-y-12">            
           <div className="space-y-6 text-center w-full">
             <div className="space-y-2 text-3xl text-white w-full max-w-4xl mx-auto">
@@ -21,7 +21,7 @@ const Services = () => {
               {/* Image - 25% */}
               <div className="md:col-span-1">
                 <img 
-                  src="/src/assets/background-2.png" 
+                  src="/src/assets/chatbot.png" 
                   alt="Customer service automation" 
                   className="w-full h-auto rounded-lg shadow-lg"
                 />
@@ -42,7 +42,7 @@ const Services = () => {
               {/* Image - 25% */}
               <div className="md:col-span-1">
                 <img 
-                  src="/src/assets/background-3.png" 
+                  src="/src/assets/claims.png" 
                   alt="Insurance claims automation" 
                   className="w-full h-auto rounded-lg shadow-lg"
                 />
@@ -63,7 +63,7 @@ const Services = () => {
               {/* Image - 25% */}
               <div className="md:col-span-1">
                 <img 
-                  src="/src/assets/background-4.png" 
+                  src="/src/assets/kyb.png" 
                   alt="KYC workflow automation" 
                   className="w-full h-auto rounded-lg shadow-lg"
                 />
