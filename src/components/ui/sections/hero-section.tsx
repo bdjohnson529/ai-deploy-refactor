@@ -1,15 +1,23 @@
+"use client";
+
 import { Button } from "@/components/ui/interactive/button"
 import ChatBot from "@/components/ui/interactive/chatbot"
+import Image from "next/image"
 import cubeIcon from "@/assets/cube-icon.png"
 import aurora from "@/assets/aurora.png"
 import background from "@/assets/background-5.jpeg"
 import background4 from "@/assets/background-6.png"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
 const HeroSection = () => {
   const [email, setEmail] = useState("")
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitted, setSubmitted] = useState(false)
+  const [mounted, setMounted] = useState(false)
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
 
   const handleEmailSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
@@ -26,16 +34,22 @@ const HeroSection = () => {
   }
   return (
     <section 
-      className="min-h-screen text-white flex items-center justify-center pt-20 relative bg-cover bg-center bg-no-repeat"
+      className="min-h-screen text-white flex items-center justify-center pt-20 relative"
       id="hero"
-      style={{
-        backgroundImage: `url(${background4})`
-      }}
     >
-      {/* Dark overlay for better text readability */}
-      <div className="absolute inset-0 bg-black/50"></div>
+      {/* Background Image */}
+      <Image
+        src={background4}
+        alt="Background"
+        fill
+        className="object-cover"
+        priority
+      />
       
-      <div className="container mx-auto px-6 max-w-7xl relative z-10">
+      {/* Dark overlay for better text readability */}
+      <div className="absolute inset-0 bg-black/50 z-10"></div>
+      
+      <div className="container mx-auto px-6 max-w-7xl relative z-20">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className="space-y-12 text-center lg:text-left">
             <h1 className="text-7xl lg:text-8xl font-light leading-none tracking-tight whitespace-nowrap">
@@ -83,8 +97,11 @@ const HeroSection = () => {
 
         </div>
         
-        {/* Learn More Link */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+      </div>
+      
+      {/* Learn More Link - Aligned with bottom of hero section */}
+      {mounted && (
+        <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 pb-8 z-20">
           <button
             onClick={() => {
               const nextSection = document.querySelector('#problem') as HTMLElement
@@ -107,8 +124,8 @@ const HeroSection = () => {
             </svg>
           </button>
         </div>
+      )}
         
-      </div>
     </section>
   )
 }

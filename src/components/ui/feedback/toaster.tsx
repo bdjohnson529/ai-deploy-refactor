@@ -1,3 +1,5 @@
+"use client";
+
 import { useToast } from "@/components/ui/feedback/use-toast"
 import {
   Toast,
