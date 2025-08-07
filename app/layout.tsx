@@ -5,7 +5,7 @@ import { Providers } from "./providers";
 import { Analytics } from "@vercel/analytics/next"
 
 export const metadata: Metadata = {
-  title: "Calica AI",
+  title: "Kalika AI",
   description: "AI deployment and consulting services",
   icons: {
     icon: '/square-light.ico',
