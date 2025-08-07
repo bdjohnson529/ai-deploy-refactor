@@ -66,7 +66,8 @@ const Navigation = () => {
             </button>
           </div>
           
-          <button 
+          <Button 
+            variant="outline"
             onClick={() => {
               const section = document.querySelector('#engagement') as HTMLElement
               if (section) {
@@ -77,10 +78,8 @@ const Navigation = () => {
             }}
             className="hidden md:block ml-auto"
           >
-            <Button variant="outline">
-              Get Started
-            </Button>
-          </button>
+            Get Started
+          </Button>
         </div>
       </div>
     </nav>
