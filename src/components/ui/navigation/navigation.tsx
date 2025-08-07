@@ -21,7 +21,7 @@ const Navigation = () => {
             className="flex items-center space-x-2 hover:opacity-80 transition-opacity"
           >
             <Image src={favicon} alt="Ion Partners Logo" className="w-8 h-8 rounded-md" />
-            <span className="text-xl font-bold">Kalika AI</span>
+            <span className="text-xl font-bold">Calica AI</span>
           </button>
           
           <div className="hidden md:flex items-center space-x-8 ml-16">

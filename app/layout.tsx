@@ -5,7 +5,7 @@ import { Providers } from "./providers";
 import { Analytics } from "@vercel/analytics/next"
 
 export const metadata: Metadata = {
-  title: "Kalika AI",
+  title: "Calica AI",
   description: "AI deployment and consulting services",
   icons: {
     icon: '/square-light.ico',
@@ -23,6 +23,7 @@ export default function RootLayout({
         <Providers>
           <TooltipProvider>
             {children}
+            <Analytics />
           </TooltipProvider>
         </Providers>
       </body>
