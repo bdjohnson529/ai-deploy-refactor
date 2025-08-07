@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/interactive/button"
 import ChatBot from "@/components/ui/interactive/chatbot"
+import Image from "next/image"
 import cubeIcon from "@/assets/cube-icon.png"
 import aurora from "@/assets/aurora.png"
 import background from "@/assets/background-5.jpeg"
@@ -28,16 +29,22 @@ const HeroSection = () => {
   }
   return (
     <section 
-      className="min-h-screen text-white flex items-center justify-center pt-20 relative bg-cover bg-center bg-no-repeat"
+      className="min-h-screen text-white flex items-center justify-center pt-20 relative"
       id="hero"
-      style={{
-        backgroundImage: `url(${background4})`
-      }}
     >
-      {/* Dark overlay for better text readability */}
-      <div className="absolute inset-0 bg-black/50"></div>
+      {/* Background Image */}
+      <Image
+        src={background4}
+        alt="Background"
+        fill
+        className="object-cover"
+        priority
+      />
       
-      <div className="container mx-auto px-6 max-w-7xl relative z-10">
+      {/* Dark overlay for better text readability */}
+      <div className="absolute inset-0 bg-black/50 z-10"></div>
+      
+      <div className="container mx-auto px-6 max-w-7xl relative z-20">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className="space-y-12 text-center lg:text-left">
             <h1 className="text-7xl lg:text-8xl font-light leading-none tracking-tight whitespace-nowrap">
@@ -85,32 +92,33 @@ const HeroSection = () => {
 
         </div>
         
-        {/* Learn More Link */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
-          <button
-            onClick={() => {
-              const nextSection = document.querySelector('#problem') as HTMLElement
-              if (nextSection) {
-                const offset = 80
-                const elementPosition = nextSection.offsetTop - offset
-                window.scrollTo({ top: elementPosition, behavior: 'smooth' })
-              }
-            }}
-            className="flex flex-col items-center text-white hover:text-blue-400 transition-colors duration-300 group"
-          >
-            <span className="text-sm font-light mb-2">Learn more</span>
-            <svg 
-              className="w-6 h-6 animate-bounce group-hover:text-blue-400" 
-              fill="none" 
-              stroke="currentColor" 
-              viewBox="0 0 24 24"
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-            </svg>
-          </button>
-        </div>
-        
       </div>
+      
+      {/* Learn More Link - Fixed to bottom of screen */}
+      <div className="fixed bottom-8 left-1/2 transform -translate-x-1/2 z-20">
+        <button
+          onClick={() => {
+            const nextSection = document.querySelector('#problem') as HTMLElement
+            if (nextSection) {
+              const offset = 80
+              const elementPosition = nextSection.offsetTop - offset
+              window.scrollTo({ top: elementPosition, behavior: 'smooth' })
+            }
+          }}
+          className="flex flex-col items-center text-white hover:text-blue-400 transition-colors duration-300 group"
+        >
+          <span className="text-sm font-light mb-2">Learn more</span>
+          <svg 
+            className="w-6 h-6 animate-bounce group-hover:text-blue-400" 
+            fill="none" 
+            stroke="currentColor" 
+            viewBox="0 0 24 24"
+          >
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+          </svg>
+        </button>
+      </div>
+        
     </section>
   )
 }

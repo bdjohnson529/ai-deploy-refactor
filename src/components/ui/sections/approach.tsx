@@ -1,4 +1,8 @@
 import { Card } from "@/components/ui/layout/card"
+import Image from "next/image"
+import businessProcessMapping from "@/assets/business-process-mapping-2.png"
+import proofOfConcept from "@/assets/proof-of-concept-2.png"
+import production from "@/assets/production-2.png"
 
 const Approach = () => {
   return (
@@ -13,8 +17,8 @@ const Approach = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             {/* Left column - Image */}
             <div className="order-2 md:order-1 max-h-[300px] h-[300px] overflow-hidden flex items-center justify-center">
-              <img 
-                src="/src/assets/business-process-mapping-2.png" 
+              <Image 
+                src={businessProcessMapping} 
                 alt="Our approach illustration" 
                 className="max-w-full max-h-full rounded-lg shadow-lg object-contain"
               />
@@ -41,8 +45,8 @@ const Approach = () => {
             
             {/* Right column - Image */}
             <div className="order-2 md:order-2 max-h-[400px] h-[400px] overflow-hidden flex items-center justify-center">
-              <img 
-                src="/src/assets/proof-of-concept-2.png" 
+              <Image 
+                src={proofOfConcept} 
                 alt="Our methodology" 
                 className="max-w-full max-h-full rounded-lg shadow-lg object-contain"
               />
@@ -53,8 +57,8 @@ const Approach = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center mt-12">
             {/* Left column - Image */}
             <div className="order-2 md:order-1 max-h-[400px] h-[400px] overflow-hidden flex items-center justify-center">
-              <img 
-                src="/src/assets/production-2.png" 
+              <Image 
+                src={production} 
                 alt="Implementation strategy" 
                 className="max-w-full max-h-full rounded-lg shadow-lg object-contain"
               />

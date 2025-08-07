@@ -1,4 +1,8 @@
 import { Card } from "@/components/ui/layout/card"
+import Image from "next/image"
+import chatbotImg from "@/assets/chatbot.png"
+import claimsImg from "@/assets/claims.png"
+import kybImg from "@/assets/kyb.png"
 
 const Services = () => {
   return (
@@ -20,8 +24,8 @@ const Services = () => {
             <div className="grid md:grid-cols-4 gap-8 items-center">
               {/* Image - 25% */}
               <div className="md:col-span-1">
-                <img 
-                  src="/src/assets/chatbot.png" 
+                <Image 
+                  src={chatbotImg} 
                   alt="Customer service automation" 
                   className="w-full h-auto rounded-lg shadow-lg"
                 />
@@ -41,8 +45,8 @@ const Services = () => {
             <div className="grid md:grid-cols-4 gap-8 items-center">
               {/* Image - 25% */}
               <div className="md:col-span-1">
-                <img 
-                  src="/src/assets/claims.png" 
+                <Image 
+                  src={claimsImg} 
                   alt="Insurance claims automation" 
                   className="w-full h-auto rounded-lg shadow-lg"
                 />
@@ -62,8 +66,8 @@ const Services = () => {
             <div className="grid md:grid-cols-4 gap-8 items-center">
               {/* Image - 25% */}
               <div className="md:col-span-1">
-                <img 
-                  src="/src/assets/kyb.png" 
+                <Image 
+                  src={kybImg} 
                   alt="KYC workflow automation" 
                   className="w-full h-auto rounded-lg shadow-lg"
                 />
