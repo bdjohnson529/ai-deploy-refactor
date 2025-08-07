@@ -1,4 +1,7 @@
+"use client";
+
 import { Button } from "@/components/ui/interactive/button"
+import Image from "next/image"
 import favicon from "@/assets/square-dark.png"
 
 const Navigation = () => {
@@ -17,7 +20,7 @@ const Navigation = () => {
             }}
             className="flex items-center space-x-2 hover:opacity-80 transition-opacity"
           >
-            <img src={favicon} alt="Ion Partners Logo" className="w-8 h-8 rounded-md" />
+            <Image src={favicon} alt="Ion Partners Logo" className="w-8 h-8 rounded-md" />
             <span className="text-xl font-bold">Calica AI</span>
           </button>
           

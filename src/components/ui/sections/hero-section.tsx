@@ -1,3 +1,5 @@
+"use client";
+
 import { Button } from "@/components/ui/interactive/button"
 import ChatBot from "@/components/ui/interactive/chatbot"
 import cubeIcon from "@/assets/cube-icon.png"
